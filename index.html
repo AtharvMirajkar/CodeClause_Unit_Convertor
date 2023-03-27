@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Unit Converter</title>
+  <link rel="icon" type="image/x-icon" href="icons.svg" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Unit Converter</h1>
+    <label>Enter the value:</label>
+    <input type="number" id="inputValue" placeholder="0" />
+    <select id="fromUnit">
+      <option value="meter">meter</option>
+      <option value="centimeter">centimeter</option>
+      <option value="inch">inch</option>
+      <option value="foot">foot</option>
+    </select>
+    <label>to</label>
+    <select id="toUnit">
+      <option value="meter">meter</option>
+      <option value="centimeter">centimeter</option>
+      <option value="inch">inch</option>
+      <option value="foot">foot</option>
+    </select>
+
+    <a href="#" onclick="convert()" class="btn">Convert</a>
+    <p id="result"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
